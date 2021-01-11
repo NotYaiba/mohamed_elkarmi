@@ -1,0 +1,118 @@
+.ss{
+    // position: absolute;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.hero-conrtainer{
+    text-align: start;
+    padding: 20px;
+    width: 50%;
+    .hello{
+        color: #1e272e;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif ;
+        font-weight: bold;
+    }
+
+    .para{
+        font-family: 'Raleway', sans-serif ;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        color: #1e272e;
+    }
+
+    
+    .contact-me-button{
+        display: none;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+        width: 20%;
+        height: 40px;
+        background-color: #1e272e;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        color: white;  
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;      
+    }
+}
+
+h3{
+    font-family: 'Raleway', sans-serif ;
+    font-weight: bold;
+    font-size:40px;
+    // line-height: 2px;
+    white-space: normal; 
+    spam{
+        color: #ff3f34;
+    }
+
+}
+
+.image-me{
+    width:50%;
+    height: 100%;
+    z-index: 100;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+    }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+    .ss{
+        // margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    .hero-conrtainer{
+        width: 90%;
+        height: 250px;
+        justify-content: start;
+        .contact-me-button{
+            display: none;  
+        }
+        h3{
+            font-size:30px;     
+        }
+        .para{
+            font-family: 'Raleway', sans-serif ;
+            width: 100%;
+            font-size: 12px;
+            line-height: 1em;
+            font-weight: bold;
+            color: #1e272e;
+        }
+    }
+    .image-me{
+        // position: relative;
+        // margin-top: 30px;
+        margin: 5px auto;
+        width: 90%;
+        z-index: 100;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+    
+    }
+}

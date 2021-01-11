@@ -1,0 +1,71 @@
+.servises-container{
+    width: 80%;
+    position: absolute;
+    // margin: 20px 10% 0 10%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    text-align: center;
+    h2{
+        color: grey;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .servises{ 
+        margin-top: 30px;
+        display: grid;
+        justify-content: center; transform: translate(-50,-50);
+        grid-gap: 100px 100px;
+        grid-template-columns: repeat(2, 20%);
+        .grid-items{
+           
+            box-shadow:
+            2px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            2px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            2px 12.5px 10px rgba(0, 0, 0, 0.06),
+            2px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            2px 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            2px 100px 80px rgba(0, 0, 0, 0.12);
+            height: 200px;
+            border-radius: 15px;
+            .servise-name{
+                font-size: 15px;
+                color: grey;
+                font-weight: bold;
+                text-align: center;
+            }
+            .servise-desc{
+                font-weight: bold;
+                display: inline;
+                padding: 5px;
+                font-size: 12px;
+                color: red;
+            }
+            .logo-container{
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                margin: 20px calc(50% - 25px);
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .types{
+                display: flex;
+                // justify-content: start;
+                text-align: start   ;
+                flex-direction: column;
+                justify-content: space-around;
+                .example{
+                    font-weight: bold;
+                    list-style: circle;
+                    padding-top: 5px;
+                    font-size: 12px;
+                    color: red;
+                }
+            }
+        }
+    }
+}

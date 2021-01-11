@@ -1,0 +1,284 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+.about-container{
+    // align-items: center;
+    // justify-content: center;
+    width: 80%;
+    margin: 40px 10% 0 10%;
+    text-align: center;
+
+    .image-desc{
+
+        display: flex;
+       margin-top: 30px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 10;
+        .image-2{
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            img{
+                // max-width: 500px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius:50% ;
+            }
+            
+        }
+        .desc{
+            width: 600px;
+            padding-left: 5%;   
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            align-items: start;
+            // justify-content: space-evenly;
+            // flex-wrap: wrap;
+            .image-3{
+                display: none;
+            }
+            .paraga{
+                // width: 500px;
+                width: 100%;
+                color: #1e272e;
+                line-height: 2em;
+                text-align: justify;
+            }
+            .info-container{
+                display: grid;
+                grid-gap: 10px 50px;
+                width: 100%;
+                grid-template-columns: repeat(2, auto );
+                .info-container{
+                    color: #ff5e57;
+                    .info-span{
+                        color: #1e272e;
+                        text-align: start;
+                    }
+                    font-size: 10px;
+                }
+            }
+            
+        }
+    }
+}
+.test{
+    width: 90%;
+    height: 80px;
+}
+
+.skills-titile{
+    font-family: 'Raleway', sans-serif ;
+    transform: rotate(270deg);
+    color: #ff3f34;
+    font-size: 50px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+   
+}
+.about-titile{
+    font-family: 'Raleway', sans-serif ;
+    color: #ff3f34;
+    font-size: 50px;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// .skills{ 
+//     flex-wrap: wrap;
+//     margin-top: 100px;
+//     z-index: 55;    
+//       width: 100%;
+//     height: 700px;
+//     background-color: red;
+//     display: flex;
+//     .2{
+//         flex: 0 50%;
+//         border: red solid;
+//         box-sizing:border-box;
+//     }
+// }
+
+
+.skills-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.skills {
+    justify-content: center;
+   margin-top: 30px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 300px);
+    text-align: center;
+}
+.skill-title{
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    .skill-name{
+        color: #1e272e;
+        font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    
+}
+.pers{
+    font-family: 'Comfortaa', cursive;
+    color: #ff3f34;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+}
+
+
+.bar{
+
+    width: 100%;
+    height: 7px;
+    background-color: #808e9b;
+    border-radius: 5px;
+
+   
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ii{
+    // width: 90%;
+    height: 100%;
+    background-color:#485460;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-img{
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    .icon{
+        outline-width: 10px;
+        color: #485460;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .info-container{
+        grid-gap: 5px 5px !important;  
+        // grid-template-columns: repeat(1, 100%) !important;
+        .info-container{
+            color: #ff5e57;
+            .info-span{
+                margin-right: 5px;
+                color: #1e272e;
+                text-align: start;
+            }
+            font-size: 10px;
+        }
+    }
+    .skills-container{
+
+        flex-direction: column;
+        .skills-titile{
+            font-family: 'Raleway', sans-serif ;
+            transform: rotate(0);
+            font-size: 30px;
+         
+        }
+        .skills {
+            justify-content: center;
+             margin-top: 20px;
+            display: grid;
+            grid-gap: 10px !important;
+            grid-template-columns: repeat(1, 300px);
+            text-align: center;
+        }
+        .skill-title{
+            margin-top: -20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            .skill-name{
+                font-size: 15px;
+
+            
+        }
+    }
+    }   
+    .bar{
+        height: 5px; 
+    } 
+    .logo-img{
+        padding: 10px;
+        width: 50px;
+        height:50px;
+        .icon{
+            outline-width: 10px;
+            color: #485460;
+            font-size: 30px;
+        }
+    }
+
+
+    ///////////// about me
+
+    .image-desc{
+        justify-content: center;
+        width: 100% !important;
+       .desc{
+           align-items: center !important;
+          .image-3{
+              display: block !important;
+                width: 20%;
+                height: auto;
+                border-radius: 50%;
+                img{
+                    width: 20vw;
+                    height: 20vw;
+                    object-fit: cover;
+                    border-radius: 50%;;
+                }
+          }
+           width: 100% !important;
+           .about-titile{
+               font-size: 30px;
+               text-align: center;
+           }
+           
+       }
+    }
+    .image-2{
+            display: none !important;
+       }
+
+       .paraga{
+        font-size: 10px;
+    }
+
+  }
