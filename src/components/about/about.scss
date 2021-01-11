@@ -36,13 +36,10 @@
             flex-direction: column;
             text-align: start;
             align-items: start;
-            // justify-content: space-evenly;
-            // flex-wrap: wrap;
             .image-3{
                 display: none;
             }
             .paraga{
-                // width: 500px;
                 width: 100%;
                 color: #1e272e;
                 line-height: 2em;
@@ -122,29 +119,37 @@
     justify-content: center;
    margin-top: 30px;
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 20px 40px;
     grid-template-columns: repeat(2, 300px);
     text-align: center;
 }
 .skill-title{
     margin-top: -20px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    .skill-name{
-        color: #1e272e;
-        font-size: 20px;
-    font-family: 'Comfortaa', cursive;
-    
-}
-.pers{
-    font-family: 'Comfortaa', cursive;
-    color: #ff3f34;
-    font-weight: bold;
-    margin-left: 10px;
-}
+    .tit-pers{
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        .skill-name{
+            color: #1e272e;
+            font-size: 20px;
+             font-family: 'Comfortaa', cursive;
+        }
+        .pers{
+            font-family: 'Comfortaa', cursive;
+            color: #ff3f34;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+   
+
 
 }
 
@@ -177,8 +182,8 @@
 
 .logo-img{
     padding: 20px;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50  px;
     .icon{
         outline-width: 10px;
         color: #485460;

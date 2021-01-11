@@ -45,8 +45,11 @@ class About extends React.Component {
             {({ percent }) => (
             <div className="item">
             <div className="skill-title">
-                <h5 className="skill-name">C Language <span className="pers">{`${percent.toFixed()}%`}</span></h5>
-                
+              <div className="tit-pers">
+              <h5 className="skill-name">C Language </h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
+              
                 </div>     
               <div className="bar">
                 <div style={{ width: `${percent}%` }} className="ii">         
@@ -63,7 +66,10 @@ class About extends React.Component {
             {({ percent }) => (
             <div className="item">
             <div className="skill-title">
-                <h5 className="skill-name">Python <span className="pers">{`${percent.toFixed()}%`}</span></h5>
+            <div className="tit-pers">
+              <h5 className="skill-name">Python </h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
                 </div>
 
            
@@ -84,7 +90,10 @@ class About extends React.Component {
            
             <div className="item">
                 <div className="skill-title">
-                <h5 className="skill-name">Scripting  <span className="pers">{`${percent.toFixed()}%`}</span></h5>
+                <div className="tit-pers">
+              <h5 className="skill-name">Scripting</h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
                           </div>
               
               <div className="bar">
@@ -102,7 +111,10 @@ class About extends React.Component {
             {({ percent }) => (
             <div className="item">
             <div className="skill-title" id="ee">
-                <h5 className="skill-name"  >React (HTML && CSS)  <span className="pers">{`${percent.toFixed()}%`}</span></h5>
+            <div className="tit-pers">
+              <h5 className="skill-name">Front End</h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
                 </div>
               <div className="bar">
                 <div style={{ width: `${percent}%` }} className="ii">         
@@ -118,7 +130,10 @@ class About extends React.Component {
             {({ percent }) => (
             <div className="item">
             <div className="skill-title" id="ee">
-                <h5 className="skill-name"  >Back-End <span className="pers">{`${percent.toFixed()}%`}</span></h5>
+            <div className="tit-pers">
+              <h5 className="skill-name">Back End</h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
                 </div>
               <div className="bar">
                 <div style={{ width: `${percent}%` }} className="ii">         
@@ -134,7 +149,10 @@ class About extends React.Component {
             {({ percent }) => (
             <div className="item">
             <div className="skill-title" id="ee">
-                <h5 className="skill-name"  >DevOps <span className="pers">{`${percent.toFixed()}%`}</span></h5>
+            <div className="tit-pers">
+              <h5 className="skill-name">DevOps</h5>
+              <span className="pers">{`${percent.toFixed()}%`}</span>
+              </div>
                 </div>
               <div className="bar">
                 <div style={{ width: `${percent}%` }} className="ii">         
