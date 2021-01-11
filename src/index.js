@@ -9,40 +9,34 @@ import Hero from "./components/hero/hero";
 import About from "./components/about/about";
 import Servises from "./components/servises/servises";
 import "./App.css";
+
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  Redirect
+  Redirect,
+  HashRouter,
 } from "react-router-dom";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "React",
-      isUserAuthenticated: true
-    };
-  }
-  render() {
+function App(){
     return (
-      <Router>
+      <HashRouter>
         <Navbar/>
         <Switch>
-      <Route path=  {process.env.PUBLIC_URL  + "/about"}>
+      <Route exact path=   "/about">
             <About />
           </Route>
-          <Route path= {process.env.PUBLIC_URL + "/"}>
+          <Route exact path= "/">
             <Hero />
         </Route>
          </Switch>
          <Footer/>
-      </Router>
+      </HashRouter>
       
     );
   }
-}
+
 
 ReactDOM.render(<App/>, document.getElementById("root"));
 // If you want to start measuring performance in your app, pass a function

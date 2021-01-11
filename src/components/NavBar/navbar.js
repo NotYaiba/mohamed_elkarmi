@@ -1,5 +1,6 @@
 import React , {useState} from 'react'
 import { render } from "react-dom";
+import { useHistory } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,13 +46,13 @@ class Navbar extends React.Component {
 
         <ul className="pages-list"> 
               <li>
-                <Link to={process.env.PUBLIC_URL + "/"}
+                <Link to="/"
                 className= {this.state.linkselected == 0  ? "link-active" : "not-active"}
                 onClick={()=>this.changelink(0)}
                 >Home</Link>
               </li>
               <li>
-                <Link to= {process.env.PUBLIC_URL + "/about"}
+                <Link to= "/about"
                 className= {this.state.linkselected == 2  ? "link-active" : "not-active"}
                 onClick={()=>this.changelink(2)}
                 >About</Link>
